@@ -1,0 +1,23 @@
+UseCase:
+a random player is chosen to choose the symbol to play with. the game starts and the player turn is decided randomly. when a player chooses a place to play the game checks whether the player has won or it's a tie or it's a normal play and nothing should happen. if the player won the system should display that the specified player has won and ask him to play again. if no one wins show that the game is a tie and simply ask him to play again.
+
+Triggers:
+-a player chosen at random to chose a symbol
+-a player chosen at random to play first
+
+Actors:
+a Player to play with the X sympol
+a Player to play with the O sympol
+a Game
+
+Steps of Execuation:
+1. prompt the player to enter their name and the other player name
+2. pick a player at random and prompt him to enter the symbol to play with
+3. assign the other player automatically to play with the other symbol
+4. when a player chooses a position in which he should play
+5. check if the player has won or not or it's a tie
+6. if none the above happens:
+  7. switch the turn to the other player
+  8. change the current player turn
+  9. goto step 4
+10. show a message with the wining player and ask the user if he wants to play again
