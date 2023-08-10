@@ -1,0 +1,23 @@
+MiniMax:
+input: 
+-copy of the board with its current state
+-the empty location in which i can play on
+-is maximizer
+
+output:
+evaluation value
+
+steps:
+-play in the ith, jth cell (chosen one) in the board copy
+-get the left empty locations
+-if list of empty locations == 0:
+  -return evaluation(board)
+-if maxmimizer:
+ -list of evaluation values
+ -iterate over empty locations:
+   -list += MiniMax(board, ith, jth, false)
+   -return max(list)
+-else if minimizer:
+ -iterate over empty locations:
+   -list += MiniMax(board, ith, jth, true)
+   -return min(list)
